@@ -1,0 +1,66 @@
+@import 'root.css';
+
+.d {
+    position: relative;
+    height: 50%;
+    background-color: var(--clr-light);
+}
+
+.d form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+fieldset {
+    border: 2px solid var(--clr-dark2);
+}
+
+.d form fieldset > * {
+    margin: 20px;
+}
+
+#hidden {
+    opacity: 0;
+    padding: 0;
+    margin: -20px;
+}
+
+.r {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c {
+    display: flex;
+    position: inherit;
+    width: 45%;
+    justify-content: space-between;
+}
+
+
+input {
+    transform: translate(0px, -5px);
+    width: 150px;
+    height: 25px;
+    background-color: var(--clr-light);
+    border: 0;
+    border-bottom: 1px solid #111;
+}
+
+#sub, #clear {
+    padding: 10px 20px;
+    background-color: var(--clr-dark1);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#sub:hover, #clear:hover {
+    background-color: var(--clr-dark2);
+}
+
